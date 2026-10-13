@@ -1,32 +1,80 @@
-# Secrets
+# ============================================================
+# Secrets dan kredensial
+# ============================================================
 .env
 .env.*
 !.env.example
+
+# Keystore dan sertifikat
 *.jks
 *.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+
+# Direktori secret
 secrets/
 
+# ============================================================
 # Android
+# ============================================================
 .gradle/
 **/build/
-local.properties/
+# local.properties berisi path SDK — jangan di-commit
+local.properties
+# google-services.json berisi OAuth client ID dan project ID
+google-services.json
 *.apk
 *.aab
+*.ap_
 
-# Java / Maven
+# ============================================================
+# Spring Boot — konfigurasi lokal dan produksi
+# ============================================================
+# File konfigurasi lokal yang mengandung password DB, secret, dsb.
+application-local.yml
+application-local.yaml
+application-local.properties
+application-prod.yml
+application-prod.yaml
+application-prod.properties
+# Pola umum: abaikan semua profile selain contoh
+application-*.yml
+application-*.yaml
+application-*.properties
+!application-example.yml
+!application-example.properties
+
+# Java / Maven build output
 target/
 *.class
 *.log
 
-# Financial data and local databases
+# ============================================================
+# Data finansial dan database lokal
+# ============================================================
 *.db
 *.sqlite
 *.sqlite3
 *.csv
 *.xlsx
+*.xls
 backups/
 exports/
 
-# IDE
+# ============================================================
+# IDE dan editor
+# ============================================================
+# IntelliJ / Android Studio
 .idea/
 *.iml
+*.ipr
+*.iws
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# macOS
+.DS_Store

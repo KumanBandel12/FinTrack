@@ -10,9 +10,10 @@ Status: `[ ]` belum dikerjakan · `[x]` selesai dan terverifikasi · `[!]` terbl
   - Acceptance: PRD, Architecture, Workflow, StyleGuide, dan TODO konsisten dengan keputusan pengguna.
   - Verifikasi: review stack, bahasa, MVP, model saldo, sync, security, dan gaya UI.
   - Selesai: 2026-10-13. Semua dokumen konsisten. 6 keputusan di-defer (adjustment direction, library enkripsi, patch Spring Boot, sumber notifikasi pertama, kebijakan sign-out, retensi backup) sudah terdaftar di TODO/PRD §11 dan dijadwalkan di milestone terkait. Lihat laporan `M0.1_review_dokumentasi.md`.
-- [ ] **M0.2 Buat repository Git**
+- [x] **M0.2 Buat repository Git**
   - Acceptance: repository dibuat, branch default jelas, file sensitif/build di-ignore, tujuh dokumen awal masuk Git.
   - Verifikasi: `git status`, inspeksi `.gitignore`, review diff.
+  - Selesai: 2026-10-13. Repository ada di GitHub (KumanBandel12/FinTrack), branch default `main`. Ketujuh dokumen ter-track. `.gitignore` diperluas: perbaiki bug `local.properties/` → `local.properties`, tambah `google-services.json`, Spring Boot config lokal (`application-*.yml/yaml/properties`), format sertifikat (`.p12`, `.pfx`, `.pem`, `.key`), VS Code, dan macOS. Semua 10 pola kritis diverifikasi dengan `git check-ignore`. Ketujuh dokumen tidak ter-ignore. Commit: `docs(gitignore): perbaiki dan perluas aturan ignore M0.2`.
 - [ ] **M0.3 Buat template dan ADR awal**
   - Acceptance: keputusan offline-first, draft notifikasi, transfer, JWT, enkripsi, sync conflict, development lokal, dan visual tercatat.
   - Verifikasi: setiap ADR memuat konteks, opsi, keputusan, konsekuensi, status.
