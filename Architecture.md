@@ -46,14 +46,13 @@ flowchart TD
 
 ```text
 FinTrack/
-├── brain
-    ├── PRD.md
-    ├── Agents.md
-    ├── Architecture.md
-    ├── TODO.md
-    ├── Skill.md
-    ├── Workflow.md
-    ├── StyleGuide.md
+├── PRD.md
+├── Agents.md
+├── Architecture.md
+├── TODO.md
+├── Skill.md
+├── Workflow.md
+├── StyleGuide.md
 ├── android/app/ dan android/gradle/
 ├── backend/src/main/java/...
 ├── backend/src/main/resources/db/migration/
