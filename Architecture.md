@@ -202,14 +202,17 @@ Kontrak final wajib mendokumentasikan auth, DTO, uang, timestamp, pagination, er
 
 **End-to-end:** setup rekening → input manual → draft notifikasi → review → transfer → offline → sync → verifikasi data tetap lokal → ekspor/pemulihan.
 
-## 14. ADR yang disarankan
+## 14. Architecture Decision Records (ADR)
 
-- ADR-001 Offline-first dan sync outbox.
-- ADR-002 Draft notifikasi wajib direview.
-- ADR-003 Transfer dengan dua efek ledger.
-- ADR-004 Google verification dan siklus JWT.
-- ADR-005 Enkripsi lokal dan key lifecycle.
-- ADR-006 Idempotensi dan konflik sync.
-- ADR-007 Backend lokal langsung di laptop.
-- ADR-008 Allowlist dan sumber notifikasi pertama.
-- ADR-009 Neobrutalism dan Sora.
+Seluruh keputusan arsitektur awal telah didokumentasikan di direktori `docs/adr/` dengan format standar (lihat [template](docs/adr/template.md) dan [indeks ADR](docs/adr/README.md)):
+
+- [ADR-001 Offline-first dan sync outbox](docs/adr/ADR-001-offline-first-sync-outbox.md)
+- [ADR-002 Draft notifikasi wajib direview](docs/adr/ADR-002-draft-notifikasi-review.md)
+- [ADR-003 Transfer dengan dua efek ledger](docs/adr/ADR-003-transfer-dua-efek-ledger.md)
+- [ADR-004 Google verification dan siklus JWT](docs/adr/ADR-004-google-verification-jwt.md)
+- [ADR-005 Enkripsi lokal dan key lifecycle](docs/adr/ADR-005-enkripsi-lokal-key-lifecycle.md)
+- [ADR-006 Idempotensi dan konflik sync](docs/adr/ADR-006-idempotensi-sync-conflict.md)
+- [ADR-007 Backend lokal langsung di laptop](docs/adr/ADR-007-backend-lokal-laptop.md)
+- [ADR-008 Allowlist dan sumber notifikasi pertama](docs/adr/ADR-008-allowlist-sumber-notifikasi.md)
+- [ADR-009 Neobrutalism dan Sora](docs/adr/ADR-009-neobrutalism-dan-sora.md)
+

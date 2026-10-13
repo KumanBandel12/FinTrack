@@ -14,9 +14,10 @@ Status: `[ ]` belum dikerjakan · `[x]` selesai dan terverifikasi · `[!]` terbl
   - Acceptance: repository dibuat, branch default jelas, file sensitif/build di-ignore, tujuh dokumen awal masuk Git.
   - Verifikasi: `git status`, inspeksi `.gitignore`, review diff.
   - Selesai: 2026-10-13. Repository ada di GitHub (KumanBandel12/FinTrack), branch default `main`. Ketujuh dokumen ter-track. `.gitignore` diperluas: perbaiki bug `local.properties/` → `local.properties`, tambah `google-services.json`, Spring Boot config lokal (`application-*.yml/yaml/properties`), format sertifikat (`.p12`, `.pfx`, `.pem`, `.key`), VS Code, dan macOS. Semua 10 pola kritis diverifikasi dengan `git check-ignore`. Ketujuh dokumen tidak ter-ignore. Commit: `docs(gitignore): perbaiki dan perluas aturan ignore M0.2`.
-- [ ] **M0.3 Buat template dan ADR awal**
+- [x] **M0.3 Buat template dan ADR awal**
   - Acceptance: keputusan offline-first, draft notifikasi, transfer, JWT, enkripsi, sync conflict, development lokal, dan visual tercatat.
   - Verifikasi: setiap ADR memuat konteks, opsi, keputusan, konsekuensi, status.
+  - Selesai: 2026-10-13. Template resmi (`docs/adr/template.md`), indeks ADR (`docs/adr/README.md`), dan 9 ADR awal (ADR-001 s.d. ADR-009) selesai dibuat. Mencakup offline-first & outbox (ADR-001), draft notifikasi wajib review (ADR-002), transfer dua efek ledger (ADR-003), Google verification & siklus JWT (ADR-004), enkripsi lokal & key lifecycle (ADR-005), idempotensi & konflik sync (ADR-006), backend lokal langsung di laptop (ADR-007), allowlist notifikasi & parser ber-versi (ADR-008), serta visual neobrutalism & font Sora (ADR-009). Seluruh ADR terverifikasi memuat kelima seksi wajib. Tautan ADR diperbarui di `Architecture.md` §14.
 - [ ] **M0.4 Validasi versi dan kompatibilitas**
   - Acceptance: patch Spring Boot 3.5.x dan dependency dipilih; kompatibilitas Android API 26 diuji; library enkripsi serta sumber notifikasi pertama ditetapkan.
   - Verifikasi: catat versi, dukungan, batasan, dan hasil proof of concept. Jangan menandai selesai hanya karena dependency ditambahkan.
