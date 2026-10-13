@@ -6,9 +6,10 @@ Status: `[ ]` belum dikerjakan · `[x]` selesai dan terverifikasi · `[!]` terbl
 
 ## Milestone 0 — Konfirmasi fondasi
 
-- [ ] **M0.1 Review dokumentasi**
+- [x] **M0.1 Review dokumentasi**
   - Acceptance: PRD, Architecture, Workflow, StyleGuide, dan TODO konsisten dengan keputusan pengguna.
   - Verifikasi: review stack, bahasa, MVP, model saldo, sync, security, dan gaya UI.
+  - Selesai: 2026-10-13. Semua dokumen konsisten. 6 keputusan di-defer (adjustment direction, library enkripsi, patch Spring Boot, sumber notifikasi pertama, kebijakan sign-out, retensi backup) sudah terdaftar di TODO/PRD §11 dan dijadwalkan di milestone terkait. Lihat laporan `M0.1_review_dokumentasi.md`.
 - [ ] **M0.2 Buat repository Git**
   - Acceptance: repository dibuat, branch default jelas, file sensitif/build di-ignore, tujuh dokumen awal masuk Git.
   - Verifikasi: `git status`, inspeksi `.gitignore`, review diff.
